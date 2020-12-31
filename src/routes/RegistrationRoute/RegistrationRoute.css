@@ -1,0 +1,39 @@
+
+
+section {
+    height: 100vh;
+    padding-top: 10px;
+    background-color:lightblue;
+}
+
+
+.info {
+    text-align: center;
+    color: white;
+}
+
+.card {
+    margin: 30px auto 0 auto;
+    height: auto;
+    width: 70%;
+    background-color: blue;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+}
+
+.card h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Yellowtail', cursive;
+    font-size: 32px;
+}
+
+@media (min-width: 900px) {
+    .card {
+        width: 55%;
+    }
+}
+
+
+

@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { Input, Label } from '../Form/Form'
+import { Input } from '../Form/Form'
 import AuthApiService from '../../services/auth-api-service'
 import UserContext from '../../contexts/UserContext'
 import Button from '../Button/Button'
+import './LoginForm.css'
 
 class LoginForm extends Component {
   static defaultProps = {
@@ -47,35 +48,37 @@ class LoginForm extends Component {
         className='LoginForm'
         onSubmit={this.handleSubmit}
       >
-        <div role='alert'>
-          {error && <p>{error}</p>}
+        <div className='log-form-content'>
+          <div role='alert'>
+            {error && <p>{error}</p>}
+          </div>
+          <div>
+            <Input
+              ref={this.firstInput}
+              id='login-username-input'
+              name='username'
+              aria-label='username'
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div>
+            <Input
+              id='login-password-input'
+              name='password'
+              type='password'
+              aria-label='pasword'
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div className="button-section">
+            <Button className="log-button" type='submit'>
+              Login
+            </Button>
+          </div>
         </div>
-        <div>
-          <Label htmlFor='login-username-input'>
-            Username
-          </Label>
-          <Input
-            ref={this.firstInput}
-            id='login-username-input'
-            name='username'
-            required
-          />
-        </div>
-        <div>
-          <Label htmlFor='login-password-input'>
-            Password
-          </Label>
-          <Input
-            id='login-password-input'
-            name='password'
-            type='password'
-            required
-          />
-        </div>
-        <Button type='submit'>
-          Login
-        </Button>
-      </form>
+      </form >
     )
   }
 }

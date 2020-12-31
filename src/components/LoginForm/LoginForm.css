@@ -1,15 +1,15 @@
-.reg-form {
+.LoginForm {
     display: flex;
     flex-direction: column;
 }
 
-.reg-form-content {
+.log-form-content {
     margin: 15px auto 0 auto;
     margin-left: auto;
     margin-right: auto;
 }
 
-.reg-form-content Input {
+.log-form-content Input {
     height: 30px;
     width: 200px;
     margin-bottom: 15px;
@@ -22,20 +22,13 @@
     padding-left: 10px;
 }
 
-.reg-form-content Label {
-    color:white;
-    height: 16px;
-    width: 16px;
-    margin-right: 2px;
-}
-
-footer {
+.button-section {
     display: flex;
     flex-direction: column;
     margin-top: 25px;
 }
 
-footer button {
+.log-button {
     margin: 0 auto 10px auto;
     height: 40px;
     width: 120px;
@@ -47,22 +40,14 @@ footer button {
     font-weight: 600px;
 }
 
-footer button:hover {
+.log-button:hover {
     background-color: orange;
     color:white;
 }
 
-.log-link {
-    color: lightblue;
-    margin-left: auto;
-    margin-right: auto;
-}
-.log-link:hover {
-    color:orange;
-}
 
 @media only screen and (min-width: 600px) {
-    .reg-form-content Input {
+    .log-form-content Input {
         width: 250px;
     }
 }
