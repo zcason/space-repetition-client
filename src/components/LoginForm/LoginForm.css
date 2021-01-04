@@ -9,10 +9,20 @@
     margin-right: auto;
 }
 
-.log-form-content Input {
+.log-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.log-field Label {
+    color:white;;
+    margin: 0 auto 4px auto;
+}
+
+.log-field Input {
     height: 30px;
     width: 200px;
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;
     background-color: #d4ebf2;
     color: #484848;
     font-size: 14px;

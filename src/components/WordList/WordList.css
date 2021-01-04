@@ -1,0 +1,84 @@
+.word-list-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    padding-bottom: 15px;
+    border-radius: 16px;
+}
+
+.word-list-card h3 {
+    text-align: center;
+    color: blue;
+}
+
+.word-list-card h4{
+    color: blue;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center
+}
+.word-list-card ul {
+    list-style: none;
+    margin-right: 45px;
+}
+
+.word-stats .correct {
+    color: green;
+    text-align: center;
+}
+
+.word-stats .incorrect {
+    color: red;
+    text-align: center;
+}
+
+.total-score {
+    text-align: center;
+    color: blue;
+    font-size: 18px;
+    font-weight: 600px;
+}
+
+.learn {
+    text-decoration: none;
+    text-align: center;
+}
+
+.learn button {
+    height: 50px;
+    width: 120px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+
+
+}
+
+
+@media (min-width: 700px) {
+
+    .word-list-card {
+        width: 600px;
+    }
+
+    .word-stats {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .learn button {
+        background-color: lightblue;
+        color: white;
+    }
+
+    .learn button:hover {
+        background-color: blue;
+        color: white;
+    }
+}

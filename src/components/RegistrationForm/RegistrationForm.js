@@ -48,41 +48,35 @@ class RegistrationForm extends Component {
           <div role='alert'>
             {error && <p>{error}</p>}
           </div>
-          <div >
+          <div className="reg-field">
             <Label htmlFor='registration-name-input'>
-              <Required />
+              Enter your name<Required />
             </Label>
             <Input
               ref={this.firstInput}
               id='registration-name-input'
               name='name'
-              placeholder='Enter your name'
-              aria-label='name'
               required
             />
           </div>
-          <div>
+          <div className="reg-field">
             <Label htmlFor='registration-username-input'>
-              <Required />
+              Choose a username<Required />
             </Label>
             <Input
               id='registration-username-input'
               name='username'
-              placeholder='Choose a username'
-              aria-label='username'
               required
             />
           </div>
-          <div>
+          <div className="reg-field">
             <Label htmlFor='registration-password-input'>
-              <Required />
+              Choose a password<Required />
             </Label>
             <Input
               id='registration-password-input'
               name='password'
               type='password'
-              placeholder='Choose a password'
-              aria-label='password'
               required
             />
           </div>
@@ -96,7 +90,7 @@ class RegistrationForm extends Component {
             </Link>
           </footer>
         </div>
-      </form>
+      </form >
     )
   }
 }

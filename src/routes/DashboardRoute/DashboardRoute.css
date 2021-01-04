@@ -1,0 +1,23 @@
+.dashboard {
+    height: 100%;
+    padding: 10px 0;
+    background-color:lightblue;
+}
+
+.lang-name {
+    text-align: center;
+    color: white;
+}
+
+.word-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.word-list .loading {
+    text-align: center;
+    color: white;
+    font-size: 42;
+}
+

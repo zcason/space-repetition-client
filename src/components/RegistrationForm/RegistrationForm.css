@@ -9,10 +9,19 @@
     margin-right: auto;
 }
 
-.reg-form-content Input {
+.reg-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-field Label {
+    color:white;;
+    margin: 0 auto 4px auto;
+}
+.reg-field Input {
     height: 30px;
     width: 200px;
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;
     background-color: #d4ebf2;
     color: #484848;
     font-size: 14px;
@@ -22,12 +31,7 @@
     padding-left: 10px;
 }
 
-.reg-form-content Label {
-    color:white;
-    height: 16px;
-    width: 16px;
-    margin-right: 2px;
-}
+
 
 footer {
     display: flex;

@@ -10,7 +10,7 @@
   - If all my information is correct, upon clicking the submit button, I'm taken to a login page.
   - If any of my information is incorrect, I'm given proper error messages and the option to correct my information
 */
-describe(`User story: Register an account`, function() {
+describe(`User story: Register an account`, function () {
   it('on first load, directs me to the registration page', () => {
     cy.visit('/')
     cy.url()
@@ -18,7 +18,7 @@ describe(`User story: Register an account`, function() {
 
     cy.get('main section').within($section => {
       cy.get('h2')
-        .should('have.text', 'Sign up')
+        .should('have.text', 'Sign Up')
     })
   })
 
@@ -45,7 +45,7 @@ describe(`User story: Register an account`, function() {
         .and('have.attr', 'required', 'required')
 
       cy.get('button[type=submit]')
-        .should('have.text', 'Sign up')
+        .should('have.text', 'Sign Up')
     })
   })
 

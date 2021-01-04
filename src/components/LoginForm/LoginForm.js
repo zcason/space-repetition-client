@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Input } from '../Form/Form'
+import { Input, Label } from '../Form/Form'
 import AuthApiService from '../../services/auth-api-service'
 import UserContext from '../../contexts/UserContext'
 import Button from '../Button/Button'
@@ -52,23 +52,25 @@ class LoginForm extends Component {
           <div role='alert'>
             {error && <p>{error}</p>}
           </div>
-          <div>
+          <div className="log-field">
+            <Label htmlFor='login-username-input'>
+              Username
+            </Label>
             <Input
               ref={this.firstInput}
               id='login-username-input'
               name='username'
-              aria-label='username'
-              placeholder="Username"
               required
             />
           </div>
-          <div>
+          <div className="log-field">
+            <Label htmlFor='login-password-input'>
+              Password
+            </Label>
             <Input
               id='login-password-input'
               name='password'
               type='password'
-              aria-label='pasword'
-              placeholder="Password"
               required
             />
           </div>

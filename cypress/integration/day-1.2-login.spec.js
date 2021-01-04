@@ -21,7 +21,7 @@ import * as helpers from '../support/helpers'
   As a logged in user who is starting a new session:
   - The application remembers that I'm logged in and doesn't redirect me to the registration page.
 */
-describe(`User story: Login`, function() {
+describe(`User story: Login`, function () {
   it(`has navigation to login page in nav and form`, () => {
     cy.visit('/')
 
@@ -45,7 +45,7 @@ describe(`User story: Login`, function() {
     cy.visit('/login')
       .get('a[href="/register"]')
       .should('be.visible')
-      .and('have.text', 'Sign up')
+      .and('have.text', 'Sign Up')
   })
 
   it('displays the login page', () => {
@@ -137,26 +137,26 @@ describe(`User story: Login`, function() {
         .as('loginRequest')
 
       cy.route({
-          method: 'PUT',
-          // server determins refresh is correct
-          url: '/api/auth/token',
-          status: 200,
-          response: {
-            authToken: loginToken
-          },
-        })
+        method: 'PUT',
+        // server determins refresh is correct
+        url: '/api/auth/token',
+        status: 200,
+        response: {
+          authToken: loginToken
+        },
+      })
         .as('refreshRequest')
 
       cy.route({
-          method: 'GET',
-          url: '/api/language',
-          // minimal happy response from language endpoint
-          status: 200,
-          response: {
-            language: {},
-            words: [],
-          },
-        })
+        method: 'GET',
+        url: '/api/language',
+        // minimal happy response from language endpoint
+        status: 200,
+        response: {
+          language: {},
+          words: [],
+        },
+      })
         .as('languageRequest')
     })
 
