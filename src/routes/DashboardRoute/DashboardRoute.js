@@ -11,11 +11,11 @@ class DashboardRoute extends Component {
   }
 
   componentDidMount() {
-    SpaceRepApiService.getLanguageDets()
+    SpaceRepApiService.getLanguage()
       .then(response => this.setState({
-        isLoading: false,
         language: response.language,
-        words: response.words
+        words: response.words,
+        isLoading: false
       }))
   }
 

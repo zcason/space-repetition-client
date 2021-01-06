@@ -17,7 +17,8 @@
 
 .word-list .loading {
     text-align: center;
+    margin-bottom: 100vh;
     color: white;
-    font-size: 42;
+    font-size: 48px;
 }
 
