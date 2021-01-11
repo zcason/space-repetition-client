@@ -1,0 +1,69 @@
+.result-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 380px;
+    margin-top: 100px;
+    padding: 0 5px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.result-card .total-score {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 600px;
+}
+
+.result-card .correct-guess {
+    color: green;
+    text-align: center;
+}
+
+.result-card .incorrect-guess {
+    color: red;
+    text-align: center;
+}
+
+.result-card .feedback {
+    text-align: center;
+    color: black;
+}
+
+.result-card .highlight {
+    color: blue;
+    text-decoration: underline;
+}
+
+.result-card button {
+    height: 50px;
+    width: 120px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 700px) {
+
+    .guess-card {
+        width: 600px;
+        padding: 0;
+    }
+
+    .result-card button {
+        background-color: lightblue;
+        color: white;
+    }
+
+    .result-card button:hover {
+        background-color: blue;
+        color: white;
+    }
+}

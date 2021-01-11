@@ -1,0 +1,89 @@
+.guess-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 380px;
+    margin-top: 100px;
+    padding: 0 5px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.guess-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.guess-card h2 {
+    text-align: center;
+    color: blue;
+    margin-bottom: 0;
+}
+
+.guess-card span {
+    text-align: center;
+    color: blue;
+    margin: 5px auto 15px auto;
+}
+
+.guess-form Label {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.guess-card Input {
+    margin: 10px auto 5px auto;
+}
+
+.guess-card Button {
+    margin: 5px auto 0 auto;
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+
+.word-stats .correct {
+    color: green;
+    text-align: center;
+}
+
+.word-stats .incorrect {
+    color: red;
+    text-align: center;
+}
+
+.guess-card .total-score {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 600px;
+}
+
+
+
+@media (min-width: 700px) {
+
+    .guess-card {
+        width: 600px;
+        padding: 0;
+    }
+
+    .guess-card Button {
+        background-color: lightblue;
+        color: white;
+    }
+
+    .guess-card Button:hover {
+        background-color: blue;
+        color: white;
+    }
+
+}

@@ -54,8 +54,6 @@
     border: none;
     border-radius: 25px;
     font-weight: 600;
-
-
 }
 
 
@@ -65,7 +63,7 @@
         width: 600px;
     }
 
-    .word-stats {
+    .word-list-card .word-stats {
         display: flex;
         justify-content: center;
         flex-direction: row;

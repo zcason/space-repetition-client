@@ -4,3 +4,8 @@
     color: white;
     font-size: 48px;
 }
+
+.learning-section{
+    display: flex;
+    justify-content: center;
+}
