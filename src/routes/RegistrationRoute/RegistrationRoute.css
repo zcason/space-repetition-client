@@ -9,7 +9,9 @@ section {
 
 .info {
     text-align: center;
-    color: white;
+    color: blue;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .card {

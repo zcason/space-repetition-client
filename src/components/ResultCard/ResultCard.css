@@ -18,18 +18,19 @@
 }
 
 .result-card .correct-guess {
-    color: green;
+    color: #2e8540;
     text-align: center;
 }
 
 .result-card .incorrect-guess {
-    color: red;
+    color: #981b1e;
     text-align: center;
 }
 
 .result-card .feedback {
     text-align: center;
     color: black;
+    font-weight: 600;
 }
 
 .result-card .highlight {
@@ -55,15 +56,5 @@
     .guess-card {
         width: 600px;
         padding: 0;
-    }
-
-    .result-card button {
-        background-color: lightblue;
-        color: white;
-    }
-
-    .result-card button:hover {
-        background-color: blue;
-        color: white;
     }
 }

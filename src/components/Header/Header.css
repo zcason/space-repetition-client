@@ -23,12 +23,11 @@ header .header-link:hover {
 }
 
  .link {
-    color: white;
+    color: blue;
     text-decoration: none;
     font-weight: 600;
 }
 
  .link:hover {
-    color: blue;
     text-decoration: underline;
 }

@@ -57,12 +57,13 @@ footer button:hover {
 }
 
 .log-link {
-    color: lightblue;
     margin-left: auto;
     margin-right: auto;
+    color: white;
+    text-decoration: none;
 }
 .log-link:hover {
-    color:orange;
+    text-decoration: underline;
 }
 
 @media only screen and (min-width: 600px) {

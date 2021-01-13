@@ -4,11 +4,14 @@ import { Input, Required, Label } from '../Form/Form'
 import AuthApiService from '../../services/auth-api-service'
 import Button from '../Button/Button'
 import './RegistrationForm.css'
+import UserContext from '../../contexts/UserContext'
 
 class RegistrationForm extends Component {
   static defaultProps = {
     onRegistrationSuccess: () => { }
   }
+
+  static contextType = UserContext;
 
   state = { error: null }
 
@@ -23,10 +26,25 @@ class RegistrationForm extends Component {
       password: password.value,
     })
       .then(user => {
+        const loginCredentials = {
+          username: username.value,
+          password: password.value
+        }
         name.value = ''
         username.value = ''
         password.value = ''
-        this.props.onRegistrationSuccess()
+        this.goToDashboard(loginCredentials)
+          .then(() => this.props.onRegistrationSuccess())
+      })
+      .catch(res => {
+        this.setState({ error: res.error })
+      })
+  }
+
+  goToDashboard = (credential) => {
+    return AuthApiService.postLogin(credential)
+      .then(res => {
+        this.context.processLogin(res.authToken)
       })
       .catch(res => {
         this.setState({ error: res.error })

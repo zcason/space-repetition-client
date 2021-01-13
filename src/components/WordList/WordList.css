@@ -25,12 +25,14 @@
 }
 
 .word-stats .correct {
-    color: green;
+    color: #2e8540;
+    font-weight: 600;
     text-align: center;
 }
 
 .word-stats .incorrect {
-    color: red;
+    color: #981b1e;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -68,15 +70,5 @@
         justify-content: center;
         flex-direction: row;
         gap: 20px;
-    }
-
-    .learn button {
-        background-color: lightblue;
-        color: white;
-    }
-
-    .learn button:hover {
-        background-color: blue;
-        color: white;
     }
 }
